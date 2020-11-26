@@ -82,7 +82,17 @@ For more information, please refer to <http://unlicense.org>
 			<key code="5" output="i"/>
 			<key code="4" output="d"/>
 			<key code="38" output="h"/>
-			<key code="40" output="t"/>
+			<!-- <key code="40" output="t"/> -->
+			<key code="40">
+				<action>
+					<when state="none" output="t"/>
+					<when state="dotDiacritic" output="ṭ"/>
+					<when state="lineDiacritic" output="ṯ"/>
+				</action> 
+			</key>
+
+
+
 			<key code="37" output="n"/>
 			<!-- <key code="41" output="s"/> -->
 			<key code="41">
@@ -147,7 +157,16 @@ For more information, please refer to <http://unlicense.org>
 			<key code="5" output="I"/>
 			<key code="4" output="D"/>
 			<key code="38" output="H"/>
-			<key code="40" output="T"/>
+			<!-- <key code="40" output="T"/> -->
+			<key code="40">
+				<action>
+					<when state="none" output="T"/>
+					<when state="dotDiacritic" output="Ṭ"/>
+					<when state="lineDiacritic" output="Ṯ"/>
+				</action> 
+			</key>
+
+
 			<key code="37" output="N"/>
 			<!-- <key code="41" output="S"/> -->
 			<key code="41">
@@ -156,9 +175,9 @@ For more information, please refer to <http://unlicense.org>
 					<when state="dotDiacritic" output="Ṣ"/>
 				</action> 
 			</key>
+			<!-- <key code="39" output="_"/> -->
+			<key code="39" action="line"/>
 
-
-			<key code="39" output="_"/>
 
 		<!-- Fourth row from top, from left to right -->
 			<key code="6" output=":"/>
@@ -180,8 +199,12 @@ For more information, please refer to <http://unlicense.org>
 		<action id="dot">
 			<when state="none" next="dotDiacritic"/>
 		</action>
+		<action id="line">
+			<when state="none" next="lineDiacritic"/>
+		</action>
 	</actions>
 	<terminators>
 		<when state="dotDiacritic" output="."/>
+		<when state="lineDiacritic" output="_"/>
 	</terminators>
 </keyboard>
