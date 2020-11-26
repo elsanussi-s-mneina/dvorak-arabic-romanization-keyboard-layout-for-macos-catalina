@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_v0.4">
+<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_v0.5">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -11,12 +11,9 @@
 		<keyMapSelect mapIndex="1">
 			<modifier keys="shift"/>
 		</keyMapSelect>
-        <keyMapSelect mapIndex="2">
-            <modifier keys="anyShift caps? anyOption"/>
-        </keyMapSelect>
 	</modifierMap>
 	<keyMapSet id="mapSet">
-		<keyMap index="0" baseMapSet="mapSet" baseIndex="2">
+		<keyMap index="0">
 		<!-- Top row, from left to right on ANSI Keyboard -->
 			<key code="50" output="`"/>
 			<key code="18" output="1"/>
@@ -175,10 +172,70 @@
 			</key>
 
 
-		<!-- Space bar -->
+			<!-- Space bar -->
 			<key code="49" output=" "/>
+
+			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
+			<!-- You probably do not want to edit these -->
+			<!-- Top row, Esc, and function keys like F1, F2 -->
+			<key code="53" output="&#x001B;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+
+			<!-- Tab key -->
+			<key code="48" output="&#x0009;"/>
+
+
+			<!-- backspace -->
+			<key code="51" output="&#x0008;"/>
+
+			<!-- enter key -->
+			<key code="36" output="&#x000D;"/>
+
+			<!-- keys above arrow keys: Home, End Page Down, etc. -->
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="121" output="&#x000C;"/>
+
+
+			<key code="71" output="&#x001B;"/>
+			<key code="64" output="&#x0010;"/>
+			<key code="66" output="&#x001D;"/>
+			<key code="70" output="&#x001C;"/>
+			<key code="72" output="&#x001F;"/>
+			<key code="77" output="&#x001E;"/>
+			<key code="79" output="&#x0010;"/>
+			<key code="80" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+
+			<!-- Number pad's Enter key: -->
+			<key code="76" output="&#x0003;"/>
+
+			<!-- Arrow keys -->
+			<key code="126" output="&#x001E;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="124" output="&#x001D;"/>
 		</keyMap>
-		<keyMap index="1" baseMapSet="mapSet" baseIndex="2">
+
+
+		<keyMap index="1">
 		<!-- Top row, from left to right -->
 			<key code="50" output="~"/>
 			<key code="18" output="!"/>
@@ -328,12 +385,10 @@
 				</action> 
 			</key>
 
-
-		<!-- Space bar -->
+			<!-- Space bar -->
 			<key code="49" output=" "/>
-		</keyMap>
-		<keyMap index="2">
-			<!-- This keymap supports proper function of the tab key, the arrow keys, and other important control keys. -->
+
+			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
 			<!-- You probably do not want to edit these -->
 			<!-- Top row, Esc, and function keys like F1, F2 -->
 			<key code="53" output="&#x001B;"/>
@@ -356,13 +411,12 @@
 			<!-- Tab key -->
 			<key code="48" output="&#x0009;"/>
 
-			<!-- Space bar -->
-			<key code="49" output=" "/>
-			<key code="50" output=" "/>
 
 			<!-- backspace -->
 			<key code="51" output="&#x0008;"/>
 
+			<!-- enter key -->
+			<key code="36" output="&#x000D;"/>
 
 			<!-- keys above arrow keys: Home, End Page Down, etc. -->
 			<key code="114" output="&#x0005;"/>
