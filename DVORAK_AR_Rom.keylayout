@@ -116,7 +116,10 @@ For more information, please refer to <http://unlicense.org>
 			<key code="44" output="z"/>
 
 		<!-- Space bar -->
-			<key code="48" output=" "/>
+			<key code="49" output=" "/>
+
+		<!-- Tab key -->
+			<key code="48" output="&#x0009;" />
 		</keyMap>
 		<keyMap index="1">
 		<!-- Top row, from left to right -->
@@ -192,7 +195,10 @@ For more information, please refer to <http://unlicense.org>
 			<key code="44" output="Z"/>
 
 		<!-- Space bar -->
-			<key code="48" output=" "/>
+			<key code="49" output=" "/>
+
+		<!-- Tab key -->
+			<key code="48" output="&#x0009;" />
 		</keyMap>
 	</keyMapSet>
 	<actions>
