@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAK">
+<keyboard group="126" id="-122" name="DVORAK_Ar_Rom">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -61,7 +61,8 @@ For more information, please refer to <http://unlicense.org>
 		<!-- Second row from top, from left to right -->
 			<key code="12" output="&#39;"/> <!-- Single quote -->
 			<key code="13" output=","/>
-			<key code="14" output="."/>
+			<!-- <key code="14" output="."/> -->
+			<key code="14" action="dot"/>
 			<key code="15" output="p"/>
 			<key code="17" output="y"/>
 			<key code="16" output="f"/>
@@ -83,7 +84,13 @@ For more information, please refer to <http://unlicense.org>
 			<key code="38" output="h"/>
 			<key code="40" output="t"/>
 			<key code="37" output="n"/>
-			<key code="41" output="s"/>
+			<!-- <key code="41" output="s"/> -->
+			<key code="41">
+				<action>
+					<when state="none" output="s"/>
+					<when state="dotDiacritic" output="ṣ"/>
+				</action> 
+			</key>
 			<key code="39" output="-"/>
 
 		<!-- Fourth row from top, from left to right -->
@@ -142,7 +149,15 @@ For more information, please refer to <http://unlicense.org>
 			<key code="38" output="H"/>
 			<key code="40" output="T"/>
 			<key code="37" output="N"/>
-			<key code="41" output="S"/>
+			<!-- <key code="41" output="S"/> -->
+			<key code="41">
+				<action>
+					<when state="none" output="S"/>
+					<when state="dotDiacritic" output="Ṣ"/>
+				</action> 
+			</key>
+
+
 			<key code="39" output="_"/>
 
 		<!-- Fourth row from top, from left to right -->
@@ -161,4 +176,12 @@ For more information, please refer to <http://unlicense.org>
 			<key code="48" output=" "/>
 		</keyMap>
 	</keyMapSet>
+	<actions>
+		<action id="dot">
+			<when state="none" next="dotDiacritic"/>
+		</action>
+	</actions>
+	<terminators>
+		<when state="dotDiacritic" output="."/>
+	</terminators>
 </keyboard>
