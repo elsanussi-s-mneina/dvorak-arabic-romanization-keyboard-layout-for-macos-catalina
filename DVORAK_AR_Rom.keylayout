@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- See github.com/elsanussi-s-mneina for original repository -->
-<!-- 
-This is free and unencumbered software released into the public domain.
-
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
-
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-For more information, please refer to <http://unlicense.org>
-
--->
-
-<keyboard group="126" id="-122" name="DVORAK_Ar_Rom">
+<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_v0.3">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -40,9 +11,12 @@ For more information, please refer to <http://unlicense.org>
 		<keyMapSelect mapIndex="1">
 			<modifier keys="shift"/>
 		</keyMapSelect>
+		<keyMapSelect mapIndex="2">
+			<modifier keys="anyShift? caps? anyOption? anyControl" />
+		</keyMapSelect>
 	</modifierMap>
 	<keyMapSet id="mapSet">
-		<keyMap index="0">
+		<keyMap index="0" baseMapSet="mapSet" baseIndex="2">
 		<!-- Top row, from left to right on ANSI Keyboard -->
 			<key code="50" output="`"/>
 			<key code="18" output="1"/>
@@ -117,11 +91,8 @@ For more information, please refer to <http://unlicense.org>
 
 		<!-- Space bar -->
 			<key code="49" output=" "/>
-
-		<!-- Tab key -->
-			<key code="48" output="&#x0009;" />
 		</keyMap>
-		<keyMap index="1">
+		<keyMap index="1" baseMapSet="mapSet" baseIndex="2">
 		<!-- Top row, from left to right -->
 			<key code="50" output="~"/>
 			<key code="18" output="!"/>
@@ -196,11 +167,101 @@ For more information, please refer to <http://unlicense.org>
 
 		<!-- Space bar -->
 			<key code="49" output=" "/>
-
-		<!-- Tab key -->
-			<key code="48" output="&#x0009;" />
+		</keyMap>
+		<keyMap index="2">
+			<!-- This keymap supports proper function of the tab key, the arrow keys, and other important control keys. -->
+			<key code="0" output="&#x1;" />
+			<key code="1" output="&#x13;" />
+			<key code="2" output="&#x4;" />
+			<key code="3" output="&#x6;" />
+			<key code="4" output="&#x8;" />
+			<key code="5" output="&#x7;" />
+			<key code="6" output="&#x1A;" />
+			<key code="7" output="&#x18;" />
+			<key code="8" output="&#x3;" />
+			<key code="9" output="&#x16;" />
+			<!-- gap, 10 -->
+			<key code="11" output="&#x2;" />
+			<key code="12" output="&#x11;" />
+			<key code="13" output="&#x17;" />
+			<key code="14" output="&#x5;" />
+			<key code="15" output="&#x12;" />
+			<key code="16" output="&#x19;" />
+			<key code="17" output="&#x14;" />
+			<!-- gap, 18 -->
+			<key code="19" output="&#x0;" />
+			<!-- gap, 20-21 -->
+			<key code="22" output="&#x1E;" />
+			<!-- gap, 23-26 -->
+			<key code="27" output="&#x1F;" />
+			<!-- gap, 28-29 -->
+			<key code="30" output="&#x1D;" />
+			<key code="31" output="&#xF;" />
+			<key code="32" output="&#x15;" />
+			<key code="33" output="&#x1B;" />
+			<key code="34" output="&#x9;" />
+			<key code="35" output="&#x10;" />
+			<key code="36" output="&#xD;" />
+			<key code="37" output="&#xC;" />
+			<key code="38" output="&#xA;" />
+			<!-- gap, 39 -->
+			<key code="40" output="&#xB;" />
+			<!-- gap, 41 -->
+			<key code="42" output="&#x1C;" />
+			<!-- gap, 43-44 -->
+			<key code="45" output="&#xE;" />
+			<key code="46" output="&#xD;" />
+			<!-- gap, 47 -->
+			<key code="48" output="&#x9;" />
+			<key code="49" output="&#x0;" />
+			<!-- gap, 50 -->
+			<key code="51" output="&#x8;" />
+			<key code="52" output="&#x3;" />
+			<key code="53" output="&#x1B;" />
+			<!-- gap, 54-65 -->
+			<key code="66" output="&#x1D;" />
+			<!-- gap, 67-69 -->
+			<key code="70" output="&#x1C;" />
+			<key code="71" output="&#x1B;" />
+			<key code="72" output="&#x1F;" />
+			<!-- gap, 73-75 -->
+			<key code="76" output="&#x3;" />
+			<key code="77" output="&#x1E;" />
+			<!-- gap, 78-95 -->
+			<key code="96" output="&#x10;" />
+			<key code="97" output="&#x10;" />
+			<key code="98" output="&#x10;" />
+			<key code="99" output="&#x10;" />
+			<key code="100" output="&#x10;" />
+			<key code="101" output="&#x10;" />
+			<key code="102" output=" " />
+			<key code="103" output="&#x10;" />
+			<key code="104" output=" " />
+			<key code="105" output="&#x10;" />
+			<key code="106" output="&#x10;" />
+			<key code="107" output="&#x10;" />
+			<key code="108" output="&#x10;" />
+			<key code="109" output="&#x10;" />
+			<key code="110" output="&#x10;" />
+			<key code="111" output="&#x10;" />
+			<key code="112" output="&#x10;" />
+			<key code="113" output="&#x10;" />
+			<key code="114" output="&#x5;" />
+			<key code="115" output="&#x1;" />
+			<key code="116" output="&#xB;" />
+			<key code="117" output="&#x7F;" />
+			<key code="118" output="&#x10;" />
+			<key code="119" output="&#x4;" />
+			<key code="120" output="&#x10;" />
+			<key code="121" output="&#xC;" />
+			<key code="122" output="&#x10;" />
+			<key code="123" output="&#x1C;" />
+			<key code="124" output="&#x1D;" />
+			<key code="125" output="&#x1F;" />
+			<key code="126" output="&#x1E;" />
 		</keyMap>
 	</keyMapSet>
+
 	<actions>
 		<action id="dot">
 			<when state="none" next="dotDiacritic"/>
