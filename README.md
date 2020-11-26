@@ -1,5 +1,5 @@
-# DVORAK Keyboard Layout Template
- Trying to make a DVORAK Keyboard layout for Mac OS Catalina from scratch (partly to avoid copyright issues) using XML, and no keyboard editor.
+# DVORAK with Arabic Romanization Keyboard Layout
+ Trying to make a DVORAK Keyboard layout for Mac OS Catalina for transliterating Arabic into Latin
 
 ## Main Reference used:
 Technical Note TN2056,
@@ -16,4 +16,4 @@ https://developer.apple.com/library/archive/technotes/tn2056/_index.html
 
 
 ## History
-First started on November 25, 2020 by Elsanussi Mneina. Intended to become a template for DVORAK keyboards in the public domain.
+First started on November 26, 2020 by Elsanussi Mneina.
