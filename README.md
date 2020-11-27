@@ -9,10 +9,10 @@ https://developer.apple.com/library/archive/technotes/tn2056/_index.html
 ### Implemented:
 - lowercase letters
 - shift key implemented
+- caps lock
 
 ### Not Implemented Yet:
-- caps lock
-- number pad
+- number pad ?
 
 
 ## History
