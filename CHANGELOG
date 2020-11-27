@@ -1,0 +1,2 @@
+v0.56:
+Now when you press space after a dead key, it only puts the terminator. So you can type "." easily. But you may have to type extra spaces.

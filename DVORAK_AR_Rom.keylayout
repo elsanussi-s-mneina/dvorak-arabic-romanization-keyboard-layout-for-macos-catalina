@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_v0.5">
+<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_v0.56">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -173,7 +173,15 @@
 
 
 			<!-- Space bar -->
-			<key code="49" output=" "/>
+			<!-- <key code="49" output=" "/> -->
+			<key code="49">
+				<action>
+					<when state="none" output=" "/>
+					<when state="dotDiacritic" output="."/>
+					<when state="lineDiacritic" output="_"/>
+					<when state="otherDiacritic" output="^"/>
+				</action> 
+			</key>
 
 			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
 			<!-- You probably do not want to edit these -->
@@ -386,7 +394,15 @@
 			</key>
 
 			<!-- Space bar -->
-			<key code="49" output=" "/>
+			<!-- <key code="49" output=" "/> -->
+			<key code="49">
+				<action>
+					<when state="none" output=" "/>
+					<when state="dotDiacritic" output="."/>
+					<when state="lineDiacritic" output="_"/>
+					<when state="otherDiacritic" output="^"/>
+				</action> 
+			</key>
 
 			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
 			<!-- You probably do not want to edit these -->
@@ -462,5 +478,6 @@
 	<terminators>
 		<when state="dotDiacritic" output="."/>
 		<when state="lineDiacritic" output="_"/>
+		<when state="otherDiacritic" output="^"/>
 	</terminators>
 </keyboard>
