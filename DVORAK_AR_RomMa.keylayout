@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<keyboard group="126" id="-122" name="DVORAK_Ar_Rom_Ma_v0.56">
+	<layouts>
+		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
+	</layouts>
+	<modifierMap id="commonModifiers" defaultIndex="0">
+		<keyMapSelect mapIndex="0">
+			<modifier keys=""/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="1">
+			<modifier keys="shift"/>
+		</keyMapSelect>
+	</modifierMap>
+	<keyMapSet id="mapSet">
+		<keyMap index="0">
+		<!-- Top row, from left to right on ANSI Keyboard -->
+			<key code="50" output="`"/>
+			<key code="18" output="1"/>
+			<key code="19" output="2"/>
+			<key code="20" output="3"/>
+			<key code="21" output="4"/>
+			<key code="23" output="5"/>
+			<key code="22" output="6"/>
+			<key code="26" output="7"/>
+			<key code="28" output="8"/>
+			<key code="25" output="9"/>
+			<key code="29" output="0"/>
+			<key code="27" output="["/>
+			<key code="24" output="]"/>
+
+		<!-- Second row from top, from left to right -->
+			<key code="12" output="&#39;"/> <!-- Single quote -->
+			<key code="13" output=","/>
+			<!-- <key code="14" output="."/> -->
+			<key code="14" action="dot"/>
+			<key code="15" output="p"/>
+			<key code="17" output="y"/>
+			<key code="16" output="f"/>
+			<!-- <key code="32" output="g"/> -->
+			<key code="32">
+				<action>
+					<when state="none" output="g"/>
+					<when state="dotDiacritic" output="ġ"/>
+					<when state="lineDiacritic" output="ǵ"/>
+					<when state="otherDiacritic" output="ĝ"/>
+				</action> 
+			</key>
+
+
+			<key code="34">
+				<action>
+					<when state="none" output="c"/>
+					<when state="dotDiacritic" output="ċ"/>
+					<when state="lineDiacritic" output="ć"/>
+				</action> 
+			</key>
+
+
+
+			<key code="31" output="r"/>
+			<key code="35" output="l"/>
+			<key code="33" output="/"/>
+			<key code="30" output="="/>
+			<key code="42" output="\"/>
+
+		<!-- Third row from top, from left to right -->
+			<!-- <key code="0" output="a"/> -->
+			<key code="0">
+				<action>
+					<when state="none" output="a"/>
+					<when state="lineDiacritic" output="á"/>
+					<when state="otherDiacritic" output="â"/>
+				</action> 
+			</key>
+
+			<key code="1" output="o"/>
+
+
+			<key code="2" output="e"/>
+
+			<!-- <key code="3" output="u"/> -->
+			<key code="3">
+				<action>
+					<when state="none" output="u"/>
+					<when state="lineDiacritic" output="ú"/>
+					<when state="otherDiacritic" output="û"/>
+				</action> 
+			</key>
+
+			<!-- <key code="5" output="i"/> -->
+			<key code="5">
+				<action>
+					<when state="none" output="i"/>
+					<when state="lineDiacritic" output="í"/>
+				</action> 
+			</key>
+
+			<!-- <key code="4" output="d"/> -->
+			<key code="4">
+				<action>
+					<when state="none" output="d"/>
+					<when state="dotDiacritic" output="ḋ"/>
+					<when state="lineDiacritic" output="đ"/>
+				</action> 
+			</key>
+
+			<!-- <key code="38" output="h"/> -->
+			<key code="38">
+				<action>
+					<when state="none" output="h"/>
+					<when state="dotDiacritic" output="ḣ"/>
+					<when state="lineDiacritic" output="ħ"/>
+					<when state="otherDiacritic" output="ĥ"/>
+				</action> 
+			</key>
+
+
+			<!-- <key code="40" output="t"/> -->
+			<key code="40">
+				<action>
+					<when state="none" output="t"/>
+					<when state="dotDiacritic" output="ṫ"/>
+					<when state="lineDiacritic" output="ŧ"/>
+					<when state="otherDiacritic" output="ţ"/>
+				</action> 
+			</key>
+
+
+
+			<key code="37">
+				<action>
+					<when state="none" output="n"/>
+					<when state="lineDiacritic" output="ń"/>
+				</action> 
+			</key>
+
+
+			<!-- <key code="41" output="s"/> -->
+			<key code="41">
+				<action>
+					<when state="none" output="s"/>
+					<when state="lineDiacritic" output="ś"/>
+				</action> 
+			</key>
+			<key code="39" output="-"/>
+
+		<!-- Fourth row from top, from left to right -->
+			<key code="6" output=";"/>
+			<key code="7" output="q"/>
+			<key code="8" output="j"/>
+			<key code="9" output="k"/>
+
+
+			<key code="11" output="x"/>
+			<key code="45" output="b"/>
+			<key code="46" output="m"/>
+			<key code="43" output="w"/>
+			<key code="47" output="v"/>
+			<!-- <key code="44" output="z"/> -->
+			<key code="44">
+				<action>
+					<when state="none" output="z"/>
+					<when state="dotDiacritic" output="ż"/>
+					<when state="lineDiacritic" output="ź"/>
+				</action> 
+			</key>
+
+
+			<!-- Space bar -->
+			<!-- <key code="49" output=" "/> -->
+			<key code="49">
+				<action>
+					<when state="none" output=" "/>
+					<when state="dotDiacritic" output="."/>
+					<when state="lineDiacritic" output="_"/>
+					<when state="otherDiacritic" output="^"/>
+				</action> 
+			</key>
+
+			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
+			<!-- You probably do not want to edit these -->
+			<!-- Top row, Esc, and function keys like F1, F2 -->
+			<key code="53" output="&#x001B;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+
+			<!-- Tab key -->
+			<key code="48" output="&#x0009;"/>
+
+
+			<!-- backspace -->
+			<key code="51" output="&#x0008;"/>
+
+			<!-- enter key -->
+			<key code="36" output="&#x000D;"/>
+
+			<!-- keys above arrow keys: Home, End Page Down, etc. -->
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="121" output="&#x000C;"/>
+
+
+			<key code="71" output="&#x001B;"/>
+			<key code="64" output="&#x0010;"/>
+			<key code="66" output="&#x001D;"/>
+			<key code="70" output="&#x001C;"/>
+			<key code="72" output="&#x001F;"/>
+			<key code="77" output="&#x001E;"/>
+			<key code="79" output="&#x0010;"/>
+			<key code="80" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+
+			<!-- Number pad's Enter key: -->
+			<key code="76" output="&#x0003;"/>
+
+			<!-- Arrow keys -->
+			<key code="126" output="&#x001E;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="124" output="&#x001D;"/>
+		</keyMap>
+
+
+		<keyMap index="1">
+		<!-- Top row, from left to right -->
+			<key code="50" output="~"/>
+			<key code="18" output="!"/>
+			<key code="19" output="@"/>
+			<key code="20" output="#"/>
+			<key code="21" output="$"/>
+			<key code="23" output="%"/>
+			<!-- <key code="22" output="^"/> -->
+			<key code="22" action="goToOtherDiacritic"/>
+
+			<key code="26" output="&#38;"/> <!-- the output is the ampersand -->
+			<key code="28" output="*"/>
+			<key code="25" output="("/>
+			<key code="29" output=")"/>
+			<key code="27" output="{"/>
+			<key code="24" output="}"/>
+
+		<!-- Second row from top, from left to right -->
+			<key code="12" output="&#34;"/> <!-- the output is the double quote -->
+			<key code="13" output="&#60;"/> <!-- the output is the less than sign -->
+			<key code="14" output="&#62;"/> <!-- the output is the greater than sign -->
+			<key code="15" output="P"/>
+			<key code="17" output="Y"/>
+			<key code="16" output="F"/>
+			<!-- <key code="32" output="G"/> -->
+			<key code="32">
+				<action>
+					<when state="none" output="G"/>
+					<when state="dotDiacritic" output="Ġ"/>
+					<when state="lineDiacritic" output="Ǵ"/>
+					<when state="otherDiacritic" output="Ĝ"/>
+				</action> 
+			</key>
+
+			<key code="34">
+				<action>
+					<when state="none" output="C"/>
+					<when state="dotDiacritic" output="Ċ"/>
+					<when state="lineDiacritic" output="Ć"/>
+				</action> 
+			</key>
+
+			<key code="31" output="R"/>
+			<key code="35" output="L"/>
+			<key code="33" output="?"/>
+			<key code="30" output="+"/>
+			<key code="42" output="|"/>
+
+		<!-- Third row from top, from left to right -->
+			<!-- <key code="0" output="A"/> -->
+			<key code="0">
+				<action>
+					<when state="none" output="A"/>
+					<when state="lineDiacritic" output="Á"/>
+					<when state="otherDiacritic" output="Â"/>
+				</action> 
+			</key>
+
+			<key code="1" output="O"/>
+
+			<key code="2" output="E"/>
+
+			<!-- <key code="3" output="U"/> -->
+			<key code="3">
+				<action>
+					<when state="none" output="U"/>
+					<when state="lineDiacritic" output="Ú"/>
+					<when state="otherDiacritic" output="Û"/>
+				</action> 
+			</key>
+
+			<!-- <key code="5" output="I"/> -->
+			<key code="5">
+				<action>
+					<when state="none" output="I"/>
+					<when state="lineDiacritic" output="Í"/>
+				</action> 
+			</key>
+
+			<!-- <key code="4" output="D"/> -->
+			<key code="4">
+				<action>
+					<when state="none" output="D"/>
+					<when state="dotDiacritic" output="Ḋ"/>
+					<when state="lineDiacritic" output="Đ"/>
+				</action> 
+			</key>
+
+
+			<!-- <key code="38" output="H"/> -->
+			<key code="38">
+				<action>
+					<when state="none" output="H"/>
+					<when state="dotDiacritic" output="Ḣ"/>
+					<when state="lineDiacritic" output="Ħ"/>
+					<when state="otherDiacritic" output="Ĥ"/>
+				</action> 
+			</key>
+
+
+			<!-- <key code="40" output="T"/> -->
+			<key code="40">
+				<action>
+					<when state="none" output="T"/>
+					<when state="dotDiacritic" output="Ṫ"/>
+					<when state="lineDiacritic" output="Ŧ"/>
+					<when state="otherDiacritic" output="Ţ"/>
+				</action> 
+			</key>
+
+
+			<key code="37">
+				<action>
+					<when state="none" output="N"/>
+					<when state="lineDiacritic" output="Ń"/>
+				</action> 
+			</key>
+
+
+			<!-- <key code="41" output="S"/> -->
+			<key code="41">
+				<action>
+					<when state="none" output="S"/>
+					<when state="lineDiacritic" output="Ś"/>
+				</action> 
+			</key>
+			<!-- <key code="39" output="_"/> -->
+			<key code="39" action="line"/>
+
+
+		<!-- Fourth row from top, from left to right -->
+			<key code="6" output=":"/>
+			<key code="7" output="Q"/>
+			<key code="8" output="J"/>
+			<key code="9" output="K"/>
+			<key code="11" output="X"/>
+			<key code="45" output="B"/>
+			<key code="46" output="M"/>
+			<key code="43" output="W"/>
+			<key code="47" output="V"/>
+			<!-- <key code="44" output="Z"/> -->
+			<key code="44">
+				<action>
+					<when state="none" output="Z"/>
+					<when state="lineDiacritic" output="Ź"/>
+					<when state="dotDiacritic" output="Ż"/>
+				</action> 
+			</key>
+
+			<!-- Space bar -->
+			<!-- <key code="49" output=" "/> -->
+			<key code="49">
+				<action>
+					<when state="none" output=" "/>
+					<when state="dotDiacritic" output="."/>
+					<when state="lineDiacritic" output="_"/>
+					<when state="otherDiacritic" output="^"/>
+				</action> 
+			</key>
+
+			<!-- The rest of the keys supports proper function of the tab key, the arrow keys, and other important control keys. -->
+			<!-- You probably do not want to edit these -->
+			<!-- Top row, Esc, and function keys like F1, F2 -->
+			<key code="53" output="&#x001B;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+
+			<!-- Tab key -->
+			<key code="48" output="&#x0009;"/>
+
+
+			<!-- backspace -->
+			<key code="51" output="&#x0008;"/>
+
+			<!-- enter key -->
+			<key code="36" output="&#x000D;"/>
+
+			<!-- keys above arrow keys: Home, End Page Down, etc. -->
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="121" output="&#x000C;"/>
+
+
+			<key code="71" output="&#x001B;"/>
+			<key code="64" output="&#x0010;"/>
+			<key code="66" output="&#x001D;"/>
+			<key code="70" output="&#x001C;"/>
+			<key code="72" output="&#x001F;"/>
+			<key code="77" output="&#x001E;"/>
+			<key code="79" output="&#x0010;"/>
+			<key code="80" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+
+			<!-- Number pad's Enter key: -->
+			<key code="76" output="&#x0003;"/>
+
+			<!-- Arrow keys -->
+			<key code="126" output="&#x001E;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="124" output="&#x001D;"/>
+		</keyMap>
+	</keyMapSet>
+
+	<actions>
+		<action id="dot">
+			<when state="none" next="dotDiacritic"/>
+		</action>
+		<action id="line">
+			<when state="none" next="lineDiacritic"/>
+		</action>
+		<action id="goToOtherDiacritic">
+			<when state="none" next="otherDiacritic"/>
+		</action>
+	</actions>
+	<terminators>
+		<when state="dotDiacritic" output="."/>
+		<when state="lineDiacritic" output="_"/>
+		<when state="otherDiacritic" output="^"/>
+	</terminators>
+</keyboard>
